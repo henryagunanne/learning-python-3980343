@@ -3,13 +3,19 @@
 
 # Sequences: Lists and Tuples
 # These are -- surprise -- sequences of values
-
+myList = [0, 1, "two", 3.2, False]
+print(len(myList))
 
 # to access a member of a sequence type, use []
-
+print(myList[2])
+print(myList[-1])
+myList[0] = 10
+print(myList)
 
 # add a list to another list
-
+another_list = [6, 7, 8]
+myList = myList + another_list
+print(myList)
 
 # use slices to get parts of a sequence
 
