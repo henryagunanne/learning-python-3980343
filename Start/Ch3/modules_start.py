@@ -2,13 +2,13 @@
 # Working with modules of code
 
 # import the math module, which contains features for working with mathematics
-
+import math
 
 # import a specific part of the module so you can refer to it more easily
-
+from math import pi
 
 # import a module and give it a different name
-
+import random as r
 
 # the math module contains lots of pre-built functions
 
@@ -22,7 +22,7 @@
 # try some of the math functions for yourself here:
 
 # Use the 3rd party tabulate module to print tabulated data:
-
+from tabulate import tabulate
 # Sample data
 data = [
   ["Product", "Price", "Stock"],
@@ -32,3 +32,4 @@ data = [
 ]
 
 # Create a formatted table
+print(tabulate(data, headers="firstrow", tablefmt="double_outline"))
